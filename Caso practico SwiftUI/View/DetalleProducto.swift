@@ -41,7 +41,7 @@ struct DetalleProducto: View {
                     VStack(alignment: .leading, spacing:10){
                         Text((producto?.nombre)!)
                         Text("Precio: $" + String((producto?.precioRegular)!))
-                        Text("Descuento: %" + String((producto?.porcentajeDescuento)!))
+                        Text("Descuento: %" + String(Int(producto!.porcentajeDescuento)))
                         Text("Precio final: $" + String((producto?.precioFinal)!))
                     }
                     Spacer()
