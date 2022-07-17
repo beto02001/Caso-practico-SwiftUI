@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7816D7228838CBE002ED95E /* DetalleProducto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7816D7128838CBE002ED95E /* DetalleProducto.swift */; };
+		C7816D75288395FF002ED95E /* CeldaProductoLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7816D74288395FF002ED95E /* CeldaProductoLista.swift */; };
+		C79A31D728834464005C9487 /* ProductosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A31D628834464005C9487 /* ProductosModel.swift */; };
+		C79A31D9288344F7005C9487 /* ProductosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A31D8288344F7005C9487 /* ProductosViewModel.swift */; };
 		C7EF5B6928833BCA00C49A83 /* Caso_practico_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EF5B6828833BCA00C49A83 /* Caso_practico_SwiftUIApp.swift */; };
 		C7EF5B6B28833BCA00C49A83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EF5B6A28833BCA00C49A83 /* ContentView.swift */; };
 		C7EF5B6D28833BCB00C49A83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7EF5B6C28833BCB00C49A83 /* Assets.xcassets */; };
 		C7EF5B7028833BCB00C49A83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7EF5B6F28833BCB00C49A83 /* Preview Assets.xcassets */; };
+		C7EF5B7728833DB900C49A83 /* ListaProductosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EF5B7628833DB900C49A83 /* ListaProductosView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7816D7128838CBE002ED95E /* DetalleProducto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleProducto.swift; sourceTree = "<group>"; };
+		C7816D74288395FF002ED95E /* CeldaProductoLista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaProductoLista.swift; sourceTree = "<group>"; };
+		C79A31D628834464005C9487 /* ProductosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductosModel.swift; sourceTree = "<group>"; };
+		C79A31D8288344F7005C9487 /* ProductosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductosViewModel.swift; sourceTree = "<group>"; };
+		C79A31DA28834740005C9487 /* Caso-practico-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Caso-practico-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C7EF5B6528833BCA00C49A83 /* Caso practico SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caso practico SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EF5B6828833BCA00C49A83 /* Caso_practico_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caso_practico_SwiftUIApp.swift; sourceTree = "<group>"; };
 		C7EF5B6A28833BCA00C49A83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C7EF5B6C28833BCB00C49A83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7EF5B6F28833BCB00C49A83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C7EF5B7628833DB900C49A83 /* ListaProductosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaProductosView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +43,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C7816D7328839568002ED95E /* Vista Celdas */ = {
+			isa = PBXGroup;
+			children = (
+				C7816D74288395FF002ED95E /* CeldaProductoLista.swift */,
+			);
+			path = "Vista Celdas";
+			sourceTree = "<group>";
+		};
+		C7816D762883C715002ED95E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C7EF5B6C28833BCB00C49A83 /* Assets.xcassets */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C79A31D3288343F2005C9487 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C79A31D628834464005C9487 /* ProductosModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C79A31D4288343FF005C9487 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7816D7328839568002ED95E /* Vista Celdas */,
+				C7EF5B6A28833BCA00C49A83 /* ContentView.swift */,
+				C7816D7128838CBE002ED95E /* DetalleProducto.swift */,
+				C7EF5B7628833DB900C49A83 /* ListaProductosView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C79A31D52883440D005C9487 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C79A31D8288344F7005C9487 /* ProductosViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C7EF5B5C28833BCA00C49A83 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +105,12 @@
 		C7EF5B6728833BCA00C49A83 /* Caso practico SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				C7816D762883C715002ED95E /* Helpers */,
+				C79A31DA28834740005C9487 /* Caso-practico-SwiftUI-Info.plist */,
+				C79A31D52883440D005C9487 /* ViewModel */,
+				C79A31D4288343FF005C9487 /* View */,
+				C79A31D3288343F2005C9487 /* Model */,
 				C7EF5B6828833BCA00C49A83 /* Caso_practico_SwiftUIApp.swift */,
-				C7EF5B6A28833BCA00C49A83 /* ContentView.swift */,
-				C7EF5B6C28833BCB00C49A83 /* Assets.xcassets */,
 				C7EF5B6E28833BCB00C49A83 /* Preview Content */,
 			);
 			path = "Caso practico SwiftUI";
@@ -139,6 +196,11 @@
 			files = (
 				C7EF5B6B28833BCA00C49A83 /* ContentView.swift in Sources */,
 				C7EF5B6928833BCA00C49A83 /* Caso_practico_SwiftUIApp.swift in Sources */,
+				C7816D75288395FF002ED95E /* CeldaProductoLista.swift in Sources */,
+				C7EF5B7728833DB900C49A83 /* ListaProductosView.swift in Sources */,
+				C79A31D728834464005C9487 /* ProductosModel.swift in Sources */,
+				C79A31D9288344F7005C9487 /* ProductosViewModel.swift in Sources */,
+				C7816D7228838CBE002ED95E /* DetalleProducto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +332,7 @@
 				DEVELOPMENT_TEAM = 9QDXF859Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Caso-practico-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +362,7 @@
 				DEVELOPMENT_TEAM = 9QDXF859Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Caso-practico-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
