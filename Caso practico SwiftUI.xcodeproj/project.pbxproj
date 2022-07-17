@@ -70,10 +70,10 @@
 		C79A31D4288343FF005C9487 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C7816D7328839568002ED95E /* Vista Celdas */,
 				C7EF5B6A28833BCA00C49A83 /* ContentView.swift */,
-				C7816D7128838CBE002ED95E /* DetalleProducto.swift */,
 				C7EF5B7628833DB900C49A83 /* ListaProductosView.swift */,
+				C7816D7128838CBE002ED95E /* DetalleProducto.swift */,
+				C7816D7328839568002ED95E /* Vista Celdas */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -105,12 +105,12 @@
 		C7EF5B6728833BCA00C49A83 /* Caso practico SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				C7816D762883C715002ED95E /* Helpers */,
-				C79A31DA28834740005C9487 /* Caso-practico-SwiftUI-Info.plist */,
-				C79A31D52883440D005C9487 /* ViewModel */,
-				C79A31D4288343FF005C9487 /* View */,
-				C79A31D3288343F2005C9487 /* Model */,
 				C7EF5B6828833BCA00C49A83 /* Caso_practico_SwiftUIApp.swift */,
+				C79A31DA28834740005C9487 /* Caso-practico-SwiftUI-Info.plist */,
+				C79A31D3288343F2005C9487 /* Model */,
+				C79A31D4288343FF005C9487 /* View */,
+				C79A31D52883440D005C9487 /* ViewModel */,
+				C7816D762883C715002ED95E /* Helpers */,
 				C7EF5B6E28833BCB00C49A83 /* Preview Content */,
 			);
 			path = "Caso practico SwiftUI";

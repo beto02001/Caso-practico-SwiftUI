@@ -48,6 +48,7 @@ struct DetalleProducto: View {
                 }
                 Spacer()
             }
+            .padding()
             .foregroundColor(.white)
             .font(.system(size: 18, weight: .medium, design: .default))
         }

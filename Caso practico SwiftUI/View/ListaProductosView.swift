@@ -10,15 +10,12 @@ import SwiftUI
 struct ListaProductosView: View {
     @StateObject var viewmodel: ProductosViewModel = ProductosViewModel()
     var body: some View {
-        NavigationView {
-            List(viewmodel.productosData, id: \.nombre) { prod in
-                NavigationLink(destination: DetalleProducto(producto: prod)) {
-                    CeldaProductoLista(url: prod.urlImagenes![0], nombre: prod.nombre!, precio: String(prod.precioRegular!), categoria: prod.codigoCategoria?.rawValue)
-                }
-                //.listRowBackground(Color("Amarillo"))
+        List(viewmodel.productosData, id: \.nombre) { prod in
+            NavigationLink(destination: DetalleProducto(producto: prod)) {
+                CeldaProductoLista(url: prod.urlImagenes[0], nombre: prod.nombre, precio: String(prod.precioRegular), categoria: prod.codigoCategoria.rawValue)
             }
         }
-        .navigationBarTitle("Productos", displayMode: .inline)
+        .navigationTitle("Productos")
         .onAppear {
             viewmodel.getProductos()
         }

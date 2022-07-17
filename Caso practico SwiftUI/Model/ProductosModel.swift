@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: - Welcome
+// MARK: - ProductosModel
 struct ProductosModel: Decodable {
     var resultado: Resultado
 }
@@ -19,20 +19,20 @@ struct Resultado: Decodable {
 
 // MARK: - Producto
 struct Producto: Decodable {
-    var id: String?
-    var idLinea: Int?
-    var codigoCategoria: CodigoCategoria?
-    var idModalidad, relevancia: Int?
-    var lineaCredito: String?
-    var pagoSemanalPrincipal, plazoPrincipal: Int?
-    var disponibleCredito: Bool?
-    var abonosSemanales: [AbonosSemanale]?
-    var sku, nombre: String?
-    var urlImagenes: [String]?
-    var precioRegular: Int?
-    var precioFinal, porcentajeDescuento: Double?
-    var descuento: Bool?
-    var precioCredito, montoDescuento: Double?
+    var id: String
+    var idLinea: Int
+    var codigoCategoria: CodigoCategoria
+    var idModalidad, relevancia: Int
+    var lineaCredito: String
+    var pagoSemanalPrincipal, plazoPrincipal: Int
+    var disponibleCredito: Bool
+    var abonosSemanales: [AbonosSemanale]
+    var sku, nombre: String
+    var urlImagenes: [String]
+    var precioRegular: Int
+    var precioFinal, porcentajeDescuento: Double
+    var descuento: Bool
+    var precioCredito, montoDescuento: Double
 }
 
 // MARK: - AbonosSemanale
