@@ -17,6 +17,7 @@ struct CeldaProductoLista: View {
             Text("Categoria " + categoria!)
                 .font(.system(size: 18, weight: .medium, design: .default))
             HStack(spacing: 30){
+                
                 AsyncImage(url: URL(string: url!)) { image in
                     image.resizable()
                 } placeholder: {

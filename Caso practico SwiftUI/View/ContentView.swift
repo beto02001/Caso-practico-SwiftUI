@@ -10,21 +10,21 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView{
-            VStack{
-                Spacer()
-                NavigationLink(destination: ListaProductosView(),label: {Text("Generar lista") .padding(.all,15) .frame(width: 150)})
-                    .background(Color("Rojo"))
-                    .cornerRadius(17)
-                    .foregroundColor(.white)
-                    .shadow(color: .gray, radius: 10, x: 0, y: 10)
-                Spacer()
-            }
-            .background(
-                Image("fondo") 
+            ZStack{
+                Image("fondo")
                     .resizable()
                     .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
-            )
+                    .ignoresSafeArea()
+                VStack(alignment: .trailing){
+                    Spacer()
+                    NavigationLink(destination: ListaProductosView(),label: {Text("Generar lista") .padding(.all,15) .frame(width: 150)})
+                        .background(Color("Rojo"))
+                        .cornerRadius(17)
+                        .foregroundColor(.white)
+                        .shadow(color: .gray, radius: 10, x: 0, y: 10)
+                    Spacer()
+                }
+            }
         }
     }
 }
